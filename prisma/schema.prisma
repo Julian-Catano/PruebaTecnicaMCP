@@ -1,0 +1,31 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model User {
+  id        Int       @id @default(autoincrement())
+  phone     String    @unique
+  createdAt DateTime  @default(now())
+
+  messages  Message[]
+}
+
+model Message {
+  id        Int      @id @default(autoincrement())
+  text      String
+  fromUser  Boolean
+  createdAt DateTime @default(now())
+
+  userId Int
+  user   User @relation(fields: [userId], references: [id])
+}
+
+model WebhookLog {
+  id        Int      @id @default(autoincrement())
+  payload   String
+  createdAt DateTime @default(now())
+}
