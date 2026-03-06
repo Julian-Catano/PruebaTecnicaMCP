@@ -4,7 +4,7 @@ Microservicio desarrollado como prueba técnica para evaluar habilidades en desa
 
 ---
 
-# 📌 Descripción
+# Descripción
 
 Este proyecto implementa un **Microservice Control Point (MCP)** encargado de procesar mensajes provenientes de WhatsApp, enviarlos a **OpenAI**, generar una respuesta inteligente y almacenar el historial de la conversación en una base de datos.
 
@@ -18,7 +18,7 @@ El sistema permite:
 
 ---
 
-# 🛠 Tecnologías utilizadas
+# Tecnologías utilizadas
 
 - Node.js
 - NestJS
@@ -30,7 +30,7 @@ El sistema permite:
 
 ---
 
-# 📁 Estructura del proyecto
+# Estructura del proyecto
 
 ```
 src
@@ -51,7 +51,7 @@ src
 
 ---
 
-# ⚙️ Instalación
+# Instalación
 
 Clonar el repositorio:
 
@@ -68,7 +68,7 @@ npm install
 
 ---
 
-# 🔐 Variables de entorno
+# Variables de entorno
 
 Crear un archivo `.env`
 
@@ -80,7 +80,7 @@ PORT=3000
 
 ---
 
-# 🗄 Base de datos
+# Base de datos
 
 Generar cliente de Prisma:
 
@@ -96,7 +96,7 @@ npx prisma db push
 
 ---
 
-# 🚀 Ejecutar el proyecto
+# Ejecutar el proyecto
 
 ```bash
 npx ts-node src/main.ts
@@ -110,7 +110,7 @@ http://localhost:3000
 
 ---
 
-# 📡 Endpoint principal
+# Endpoint principal
 
 ### Enviar mensaje
 
@@ -137,7 +137,7 @@ Respuesta esperada:
 
 ---
 
-# 🧠 Flujo del sistema
+# Flujo del sistema
 
 1. Usuario envía mensaje
 2. API recibe el mensaje
@@ -149,7 +149,7 @@ Respuesta esperada:
 
 ---
 
-# 🗄 Modelo de datos
+# Modelo de datos
 
 El sistema almacena información de:
 
@@ -162,7 +162,7 @@ Esto permite mantener historial de interacción con cada usuario.
 
 ---
 
-# 🧪 Posibles mejoras
+# Posibles mejoras
 
 - Integración real con API de WhatsApp
 - Autenticación JWT
@@ -173,6 +173,6 @@ Esto permite mantener historial de interacción con cada usuario.
 
 ---
 
-# 👨‍💻 Autor
+# Autor
 
 Julian Estiven Posso Cataño
